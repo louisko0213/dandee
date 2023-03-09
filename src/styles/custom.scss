@@ -5,7 +5,13 @@ body {
   height: 100vh;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin-bottom: 0 !important;
 }
 
@@ -13,4 +19,9 @@ a.no-hover-color {
   &:hover {
     color: #fff !important;
   }
+}
+
+.MuiFormControl-root,
+.MuiTextField-root {
+  width: 100% !important;
 }

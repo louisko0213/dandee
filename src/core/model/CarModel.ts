@@ -1,3 +1,5 @@
+export type carSizeType = 'small' | 'middle' | 'large' | 'rv' | 'special';
+
 export const carType = [
   { id: 'small', value: '小型' },
   { id: 'middle', value: '中型' },

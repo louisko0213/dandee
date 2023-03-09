@@ -1,1 +1,0 @@
-export type carSizeType = 'small' | 'middle' | 'large' | 'rv' | 'special';

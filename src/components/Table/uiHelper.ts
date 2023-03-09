@@ -1,6 +1,6 @@
 import { GridColDef } from "@mui/x-data-grid";
 
-export const columns: GridColDef[] = [
+export const customerColumns: GridColDef[] = [
   {
     field: 'id',
     headerName: '#',
@@ -91,7 +91,7 @@ export const columns: GridColDef[] = [
   }
 ];
 
-export const data = [
+export const customerData = [
   {
     id: '1',
     plateNumber: 'BPL-2638',
@@ -106,6 +106,110 @@ export const data = [
     color: '深藍',
     last: '2023/03/10',
     createdAt: '2022/01/01',
+    creator: '柯智獻',
+    comment: '帥哥'
+  }
+];
+
+export const worksheetColumns: GridColDef[] = [
+  {
+    field: 'id',
+    headerName: '#',
+    sortable: false,
+    width: 70,
+    align: 'center',
+  },
+  {
+    field: 'createdAt',
+    headerName: '日期',
+    sortable: false,
+    width: 150
+  },
+  {
+    field: 'plateNumber',
+    headerName: '車號',
+    sortable: false,
+    width: 150
+  },
+  {
+    field: 'name',
+    headerName: '姓名',
+    sortable: false
+  },
+  {
+    field: 'brand',
+    headerName: '廠牌',
+    sortable: false,
+    width: 120
+  },
+  {
+    field: 'model',
+    headerName: '車種',
+    sortable: false,
+    minWidth: 130
+  },
+  {
+    field: 'size',
+    headerName: '車型',
+    sortable: false
+  },
+  {
+    field: 'color',
+    headerName: '車色',
+    sortable: false,
+    minWidth: 120
+  },
+  {
+    field: 'service',
+    headerName: '服務項目',
+    sortable: false,
+    width: 300
+  },
+  {
+    field: 'amount',
+    headerName: '金額',
+    sortable: false,
+    width: 150
+  },
+  {
+    field: 'discount',
+    headerName: '折扣優惠',
+    sortable: false,
+    width: 150
+  },
+  {
+    field: 'status',
+    headerName: '狀態',
+    sortable: false,
+    width: 150
+  },
+  {
+    field: 'comment',
+    headerName: '備註',
+    sortable: false,
+    minWidth: 300
+  },
+  {
+    field: 'creator',
+    headerName: '建檔人員',
+    sortable: false,
+    width: 150
+  }
+];
+
+export const worksheetData = [
+  {
+    id: '1',
+    createdAt: '2023/09/30',
+    plateNumber: 'BPL-2638',
+    name: '柯智獻',
+    brand: 'BMW',
+    model: '420i',
+    size: '中',
+    color: '深藍',
+    amount: '123456',
+    discount: '0',
+    status: '已完工',
     creator: '柯智獻',
     comment: '帥哥'
   }
